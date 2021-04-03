@@ -1,4 +1,3 @@
-# ux_restaurante
 <h1> UX para restaurante </h1>
 
 - Em html, css, js, jquery.
