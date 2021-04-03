@@ -1,4 +1,4 @@
-<h1> UX para restaurante </h1>
+<h1> UX front-end para restaurante </h1>
 
 - Em html, css, js, jquery.
 - Totalmente responsivo
