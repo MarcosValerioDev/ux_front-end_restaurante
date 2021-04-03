@@ -1,0 +1,410 @@
+* {
+    image-rendering: optimizeQuality;
+    margin     : 0px;
+    padding    : 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+*::selection{
+    pointer-events: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.modalFoto {
+    position        : fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    left            : 0px;
+    top             : 0px;
+    width           : 100%;
+    height          : 100%;
+    z-index         : 100;
+    opacity         : 0;
+    visibility      : hidden;
+    transition      : all 200ms;
+}
+
+.molduraBigFoto {
+    position        : absolute;
+    left            : calc(50% - 300px);
+    top             : 20%;
+    width           : 600px;
+    height          : 400px;
+    background-color: rgb(159, 9, 9);
+    outline         : 2px solid rgb(159, 9, 9);
+
+}
+
+.bFecharBigFoto {
+    cursor          : pointer;
+    padding-right   : 10px;
+    padding-left    : 10px;
+    padding-bottom  : 20px;
+    width           : 20px;
+    height          : 12px;
+    background-color: rgb(255, 255, 255);
+    color           : rgb(3, 3, 3);
+    margin-top      : 4%;
+    margin-left     : 48%;
+    text-align      : center;
+    transition      : all 200ms linear
+}
+
+.bigFoto {
+    position: absolute;
+    left    : 0px;
+    top     : 0px;
+    width   : 100%;
+    height  : 100%;
+}
+
+.legendaFoto {
+    z-index         : 5;
+    position        : absolute;
+    width           : 60vw;
+    left            : calc(50vw - 30vw);
+    top             : 85%;
+    background-color: rgb(159, 9, 9);
+    padding-top     : 3px;
+    padding-bottom  : 3px;
+    text-align      : center;
+    color: white;
+    font-size: 15px;
+    box-sizing      : border-box;
+}
+
+.modalFotoFechar {
+    cursor    : pointer;
+    opacity   : 1;
+    visibility: visible;
+    transition: all 200ms linear;
+}
+
+.bFecharBigFoto:hover {
+
+    background-color: rgb(255, 11, 11);
+    color           : rgb(255, 255, 255);
+    border: 1px white solid;
+    transform       : scale(1.3);
+    transition      : all 200ms linear;
+
+}
+
+.legFoto {
+    display: none;
+    color: white;
+}
+
+/*----------------- Galeria ---------------------------------------------------------------*/
+.modalStateGal {
+    position        : fixed;
+    display         : flex;
+    flex-direction  : column;
+    background-color: rgba(0, 0, 0, 0.6);
+    left            : 0px;
+    top             : 0px;
+    width           : 100%;
+    height          : 100%;
+    z-index         : 20;
+}
+
+.modalPainelGal {
+    position        : fixed;
+    overflow        : hidden;
+    display         : block;
+    z-index         : 10;
+    background-color: rgb(27, 27, 27);
+    width           : 100%;
+    height          : 60px;
+}
+
+.bFecharGal {
+
+    padding-left    : 10px;
+    padding-bottom  : 20px;
+    width           : 20px;
+    height          : 12px;
+    background-color: rgb(37, 37, 37);
+    color           : #cacaca;
+    float           : right;
+}
+
+.bFecharGal:hover {
+    background-color: rgb(202, 202, 202);
+    color           : black;
+}
+
+.icoHome{
+    width: 150px;
+    margin-left: 10px;
+}
+
+.modalTituloGal{
+    position      : absolute;
+    top           : 10px;
+    left          : 10px;
+    text-decoration: none;
+    vertical-align: top;
+    color         : rgb(159, 9, 9);
+    font-size     : 25px;
+    font-weight: bold;
+    transition: all 400ms linear;
+}
+
+.tituloGaleria{
+    pointer-events: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 13px;
+    margin-right: 15px;
+    text-decoration: none;
+    vertical-align: top;
+    color         : rgb(159, 9, 9);
+    font-size     : 25px;
+    font-weight: bold;
+}
+
+.modalTituloGal:hover{
+    transform: scale(1.2);
+    transition: all 400ms linear;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+.modalTituloGal1 {
+
+    margin-top: 2%;
+    text-align: center;
+}
+
+.containerObjGal {
+    position        : relative;
+    display         : flex;
+    flex-direction  : row;
+    flex-wrap       : wrap;
+    margin-left            : 60px;
+    margin-top             : 60px;
+    width           : calc(100% - 60px);
+    height: calc(100% - 60px);
+    justify-content : space-around;
+    overflow-y      : scroll;
+    overflow-x      : hidden;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.icoMenuGal:hover {
+
+    transform : scale(1.3);
+    transition: all 200ms linear;
+}
+
+.rFotoGal {
+    cursor    : pointer;
+    width     : 260px;
+    height    : 110px;
+    transition: all 200ms linear;
+    filter    : grayscale(100);
+}
+
+.rFotoGal:hover {
+    transition: all 200ms linear;
+    filter    : grayscale(0);
+}
+
+.molduraGal:hover {
+    z-index   : 25;
+    transform : scale(1.15);
+    transition: all 200ms linear;
+}
+
+.molduraGal {
+    cursor    : pointer;
+    margin    : 5px;
+    background: rgb(27, 27, 27);
+    color: white;
+    padding   : 6px;
+    height: fit-content;
+    height: -moz-fit-content;
+    
+    transition: all 200ms linear;
+}
+
+.cPrincial {
+    display:
+        block;
+}
+
+
+
+.painelLateralGal {
+    z-index     : 60;
+    width       : 80px;
+    height      : 100%;
+    overflow    : auto;
+    position    : absolute;
+    top         : 60px;
+    left        : 0px;
+    border-right: 2px solid #9f0909;
+    background  : rgb(27, 27, 27);
+}
+
+.anoGal {
+
+    padding      : 10px;
+    display      : block;
+    width        : 100%;
+    border-bottom: 1px solid rgb(159, 9, 9);
+    color        : whitesmoke;
+}
+
+.bAno {
+    cursor: pointer;
+}
+
+.bAno:hover {
+    background: rgba(159, 9, 9, 0.6);
+}
+
+.bAnoActive {
+    background: rgba(159, 9, 9, 0.6);
+}
+
+@media (max-width: 500px) {
+
+    .molduraBigFoto {
+        position        : absolute;
+        left            : 0px;
+        top             : 20%;
+        width           : 100vw;
+        height          : 60vw;
+        background-color: rgb(159, 9, 9);
+        ;
+        outline: 2px solid rgb(159, 9, 9);
+
+    }
+}
+
+
+@media (max-width: 400px) {
+    .menuBar {
+        display: none;
+    }
+
+    .bMenu {
+        display: block;
+    }
+
+    .modalStateRS {
+        background-color: black;
+    }
+
+    .molduraBigFoto {
+        position        : absolute;
+        left            : 0px;
+        top             : 20%;
+        width           : 100vw;
+        height          : 60vw;
+        background-color: rgb(159, 9, 9);
+        outline         : 2px solid rgb(159, 9, 9);
+
+    }
+
+    .Titulo {
+        top: 70px;
+    }
+}
+
+@media (max-height: 600px) {
+    .textCombo {
+        font-size: 15px;
+    }
+
+    .molduraBigFoto {
+        position        : absolute;
+        left            : 0px;
+        top             : 20%;
+        width           : 100vw;
+        height          : 60vw;
+        background-color: rgb(159, 9, 9);
+        outline         : 2px solid rgb(159, 9, 9);
+
+    }
+
+    .cardApp {
+        bottom: 100px;
+    }
+
+    .preco {
+        font-size: 30px;
+    }
+
+    .combosTitulo {
+        font-size : 30px;
+        text-align: center;
+        width     : 100%;
+    }
+
+    .appText {
+        font-size: 10px;
+        width    : 100px;
+        height   : 55px;
+    }
+
+    .Titulo {
+        width: 80vw;
+        left : 20px;
+    }
+
+    .comboDesc {
+        font-size : 15px;
+        box-sizing: border-box;
+    }
+
+    .appTitulo {
+        width: 100px;
+    }
+
+    .bMenu {
+        display: block;
+    }
+
+    .menuBar {
+        display                   : none;
+        top                       : 0%;
+        border-top-right-radius   : 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .legendaFoto {
+        top: 75%;
+    }
+}
+
+
+@media (max-height: 400px) {
+    .molduraBigFoto{
+        top:0px;
+        left:0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bFecharBigFoto{
+        position: absolute;
+        top      : 0px;
+        z-index: 300;
+    }
+
+}

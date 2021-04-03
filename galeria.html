@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name='description' content='Desenvolvedor front-end, back-end, web, mobile e web-design. Aplicativos, sites, web services, games e advergames 2D e 3D, maquetes virtuais, realidade aumentada.'>
+        <meta name='keywords' content='Desenvolvedor front-end, back-end, aplicativos, sites, games 2D e 3D, maquetes virtuais, realidade aumentada.'>
+      
+        <link rel='shortcut icon' type='image/x-icon' href='icoMarcosDev72dpi.png'>
+        <link rel ="stylesheet" href="App/galeria.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+        <script src="App/jquery-3.4.1.js"></script>
+    <title>GALERIA</title>
+</head>
+<body style='background-image: url("Imagens/backgroundTabuas.jpg"); background-repeat: repeat;'>
+
+        <div class = "modalFoto">
+                <h2 class = "bFecharBigFoto"> X </h2>
+                
+                <div class = "molduraBigFoto"> 
+                        <img class = "bigFoto" id="bigF" src="fotos/f1.jpg">                           
+                </div>
+                <h2 class = "legendaFoto"> Comemoração de 10 anos e inauguração da nova identidade visual. </h2>
+            </div>
+
+
+      <!-- GALERIA Modal-->
+<div class = "modalStateGal">
+   
+        <div class = "modalPainelGal"> 
+               <a class="modalTituloGal" href="Portfolio-Restaurante" target = "_parent">   <img class = "icoHome" src = "Imagens/rústico.png"> </a>
+                <h3 class='tituloGaleria'> GALERIA</h3>
+        </div>
+      
+        <div class= "painelLateralGal">
+              <div class = "anoGal "> Ano </div>
+              <div class = "anoGal bAno ano2018"> 2018 </div>
+              <div class = "anoGal bAno ano2019 bAnoActive"> 2019 </div>
+        </div>
+          <div class = "containerObjGal"> 
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f1.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f2.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f3.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f4.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f5.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f6.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer</h3> <img class = "rFotoGal" src = "fotos/f7.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer</h3> <img class = "rFotoGal" src = "fotos/f8.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer</h3> <img class = "rFotoGal" src = "fotos/f9.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f10.jpg"> </div>
+               <div class = "molduraGal"> <h3 class = "legFoto"> Evento qualquer </h3> <img class = "rFotoGal" src = "fotos/f11.jpg"> </div>
+              
+        </div>
+
+    </div>
+
+ 
+
+    <script>
+        var bAno = $(".bAno");
+    bAno.click(function(){
+        bAno.removeClass("bAnoActive");
+        $(this).addClass("bAnoActive");
+    });
+
+    bAno.click(function(){
+        bAno.removeClass("bAnoActive");
+        $(this).addClass("bAnoActive");
+    });
+    
+    $(".molduraGal").click(function(){
+        $(".legendaFoto").text($(this).children(".legFoto").html()); 
+        src=$(this).children(".rFotoGal").attr('src');
+         $('#bigF').attr('src',src);
+        $(".modalFoto").addClass("modalFotoFechar");
+    });
+
+    $(".bFecharBigFoto").click(function(){
+           $(".modalFoto").removeClass("modalFotoFechar");
+       });
+    
+    </script>
+</body>
+</html>

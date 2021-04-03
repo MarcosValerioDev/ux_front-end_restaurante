@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    image-rendering: optimizeSpeed;
+ }
+
+ .body{
+     background-color: #f7f5f8;
+ }
+
+ .box-Flex{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+    position: relative;
+    margin-left: 5vw;
+    width: 90vw;
+    }
+
+.col1{
+    display: inline-flex;
+    width: 25%;
+    background-color: red;
+}
+
+.col2{
+    display: inline-flex;
+    width: 40%;   
+}
+
+.col3{
+    display: inline-flex;
+    width: 25%;
+    background-color: red;
+}
+
+
+
