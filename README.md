@@ -2,7 +2,7 @@
 
 - Em html, css, js, jquery.
 - Totalmente responsivo
-- Alernância de menus com fade in e out;
+- Alternância de menus com fade in e out;
 - Galeria para fotos.
 
 * Em estado avançado mas ainda em desenvolvimento.
